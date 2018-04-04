@@ -1,4 +1,4 @@
-FROM arm32v7/debian:stretch
+FROM arm32v7/debian:stretch-slim
 
 ENV JAVADIR /usr/src/java
 
@@ -17,4 +17,4 @@ ENV JAVA_HOME /opt/jdk
 ENV PATH ${PATH}:${JAVA_HOME}/bin
 ENV JAVA_VERSION 8u161
 
-CMD $JAVADIR/jre/bin/java
+CMD ["java"]
